@@ -1,0 +1,62 @@
+.secao-principal {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 8vh;
+}
+
+.secao-titulo {
+  margin: 0;
+  margin-bottom: 5rem;
+  font-size: 10rem;
+  text-align: center;
+  font-family: var(--fonte);
+}
+
+.secao-titulo-noticia {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.descricao-noticia {
+  margin: 0;
+}
+
+.secao-noticia {
+  display: flex;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+}
+
+.hr {
+  flex: 1;
+  border: 2px solid black;
+  margin: 2rem 0;
+}
+
+.noticia-imagem {
+  width: 50%;
+}
+
+.numero-noticia, .hr-noticia {
+  margin: 0;
+}
+
+.hr-noticia {
+  border: 1px solid black;
+}
+
+.noticia {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.noticia-titulo, .noticia-texto {
+  margin: 0;
+}
+
+.noticia-2, .noticia-4 {
+  margin-left: auto;
+}

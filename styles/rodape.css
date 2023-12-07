@@ -1,0 +1,15 @@
+.rodape {
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh;
+}
+
+.logo-rodape {
+  font-family: var(--fonte);
+  font-size: 4rem;
+}
+
+.rodape p:hover {
+  cursor: pointer;
+  color: #6fafca;
+}
