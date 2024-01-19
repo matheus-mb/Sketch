@@ -1,0 +1,93 @@
+/* - For Mobile Devices – 320px — 480px.
+   - iPads and Tablets – 481px — 768px.
+   - Laptops and small screen – 769px — 1024px.
+   - Large screens and Desktops – 1025px — 1200px.
+   - TV and Extra Large Screens – 1201px and more. */
+
+@media (max-width: 480px) {  
+  .cabecalho {
+    height: 5vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #progress-container {
+    position: fixed;
+    top: 5.7vh;
+  }
+
+  .lista-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .secao-titulo {
+    font-size: 5rem;
+  }
+
+  .noticia-imagem {
+    display: none;
+  }
+
+  .noticia {
+    margin: 5vh auto 5vh auto;
+    width: 100%;
+  }
+
+  .rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-rodape {
+    text-align: center;
+  }
+}
+
+@media (min-width: 762px) and (max-width: 1024px) {
+  .cabecalho {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+
+  #progress-container {
+  position: fixed;
+  top: 5.5vh;
+  }
+
+  .secao-noticia {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+  }
+
+  .noticia-imagem {
+    width: 80%;
+  }
+
+  .noticia {
+    margin: 5rem auto 5rem auto;
+    width: 80%;
+  }
+
+  .logo-rodape {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #progress-container {
+    position: fixed;
+    top: 6.8vh;
+    height: .3rem;
+    }
+}

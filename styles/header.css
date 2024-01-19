@@ -1,0 +1,113 @@
+.cabecalho {
+  z-index: 1;
+  width: 90%;
+  mix-blend-mode: normal;
+  background-color: #fff;
+  border: 3px solid #000;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 5vw;
+  right: 0%;
+  background-color: var(--bg-2);
+}
+
+.cabecalho li {
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: auto;
+  padding: 0;
+}
+
+.conteudo-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border: 3px solid black;
+  z-index: 1;
+  width: 20rem;
+  height: 10rem;
+  padding: 2rem;
+}
+
+.conteudo-dropdown a {
+  text-decoration: none;
+  color: #000;
+}
+
+.conteudo-dropdown a:hover {
+  text-decoration: none;
+  color: #6fafca;
+}
+
+.dropdown:hover .conteudo-dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.lista-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: end;
+  align-items: center;
+  margin: 0 1rem;
+  gap: 1rem;
+  height: 3vw;
+  padding: 0;
+}
+
+.bx-brightness-half {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dark-mode .cabecalho {
+  background-color: #000;
+  color: #fff;
+  border: 3px solid white;
+}
+
+.dark-mode .bx-brightness-half::before {
+  color: white;
+}
+
+.dark-mode .conteudo-dropdown {
+  border: 3px solid white;
+  background-color: #000;
+}
+
+.dark-mode .conteudo-dropdown a {
+  color: white;
+}
+
+#progress-container {
+  width: 90%;
+  height: 0.2rem;
+  background-color: black;
+  position: fixed;
+  top: 7vh;
+  left: 5vw;
+  right: 5vw;
+}
+
+#progress {
+  height: 100%;
+  background-color: #6fafca;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.dark-mode #progress-container {
+  background-color: white;
+}
+
+.dark-mode #progress {
+  background-color: #4caf50;
+}
